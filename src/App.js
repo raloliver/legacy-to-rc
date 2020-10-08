@@ -5,6 +5,8 @@ import Navigation from './components/Navigation';
 
 import data from './data/data.json';
 
+import './App.css';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -16,11 +18,11 @@ class App extends Component {
   }
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <Navigation />
         <Hero title={this.state.title} />
         <Feed feeds={this.state.feeds} />
-        <div class="footer">
+        <div className="footer">
           <p>&copy; {this.state.name}.</p>
         </div>
       </div>
