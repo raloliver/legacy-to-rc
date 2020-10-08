@@ -4,7 +4,9 @@ import FeedItem from './FeedItem';
 function Feed(props) {
   return (
     <div>
-      <FeedItem />
+      {props.feeds.map((item) => {
+        return <FeedItem key={item.id} feed={item} />
+      })}
     </div>
   );
 }
