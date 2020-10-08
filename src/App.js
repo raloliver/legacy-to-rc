@@ -1,13 +1,17 @@
 import React from 'react';
+import Feed from './components/Feed';
+import Hero from './components/Hero';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+    <div class="container">
+      <Navigation />
+      <Hero />
+      <Feed />
+      <div class="footer">
+            <p>&copy; A1A Beachfront Ave.</p>
+      </div>
     </div>
   );
 }
